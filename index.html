@@ -160,7 +160,7 @@
         position: absolute;
         width: 20px;
         height: 20px;
-        background: red;
+        background: rgb(43, 255, 0);
         border-radius: 50%;
         pointer-events: none;
       }
@@ -190,10 +190,10 @@
       <h1>Hacked By 0X01</h1>
       <h2>For Proof of Concept</h2>
       <h2>
-        <a
-          href="https://0X01-s-sathyan.vercel.app"
+        <a-s-sathyan.vercel.app
+          href="http://localhost/dashboard/deface/"
           style="text-decoration: none; color: whitesmoke"
-          >Contact</a
+          >Contact</a-s-sathyan.vercel.app
         >
       </h2>
     </div>
@@ -281,7 +281,7 @@
           `https://ipinfo.io/${ip}/json`,
           `https://freegeoip.app/json/${ip}`,
           `https://ipapi.co/${ip}/json/`,
-          `https://api.bigdatacloud.net/data/ip-geolocation?ip=${ip}&key=YOUR_API_KEY`, // Replace with your actual API key
+          `https://api.bigdatacloud.net/data/ip-geolocation?ip=${ip}&key=bdc_a10446dc142b43e19ed52b11f046f032`, // Replace with your actual API key
         ];
 
         for (let api of apis) {
@@ -336,11 +336,12 @@
       const logMessages = [
         "  $ Captured User Details ",
         "  $ Sending to Orionate server...",
-        "  $ Extracting sensitive data...",
+        "  $ Copying sensitive data...",
         "  $ Decrypting files...",
         "  $ Accessing database...",
-        "  $ Deploying malware...",
+        "  $ Deploying backdoor...",
         "  $ Data transfer in progress...",
+        "  $ The task is completed",
       ];
 
       logMessages.forEach((message, index) => {
@@ -349,7 +350,7 @@
           logEntry.textContent = message;
           logsDiv.appendChild(logEntry);
           logsDiv.scrollTop = logsDiv.scrollHeight;
-        }, index * 2000); // Stagger messages every 2 seconds
+        }, index * 3000); // Stagger messages every 2 seconds
       });
     </script>
   </body>
